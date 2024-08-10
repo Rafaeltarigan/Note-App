@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    font-family: "Courier New", Courier, monospace;
+    color: #e0e0e0;
+    overflow: hidden; /* Prevents scrolling */
+    position: relative;
+    height: 100vh; /* Ensure the body takes full height of the viewport */
+  }
+  
+  .background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Place it behind other content */
+  }
+  
+  .background-video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the video covers the entire area */
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    z-index: 1; /* Place it above the video */
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(31, 31, 31, 0.8); /* Semi-transparent background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 2; /* Ensure it appears above the overlay */
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 70px; /* Adjust the size as needed */
+    height: auto;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li {
+    margin: 0 15px;
+    font-weight: bolder;
+  }
+  
+  .nav-links a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .nav-links a:hover {
+    color: #bb86fc;
+  }
+  
+  .heading {
+    color: #bb86fc;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 35px;
+  }
+  
+  .info-text {
+    text-align: center;
+    color: #bb86fc;
+    font-size: 18px;
+  }
+  
+  .app {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    gap: 40px;
+    justify-content: center;
+    padding: 50px;
+    position: relative;
+    z-index: 2; /* Ensure it appears above the overlay */
+  }
+  
+  .note {
+    padding: 17px;
+    border-radius: 15px;
+    resize: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    font-size: 18px;
+    color: #e0e0e0;
+    border: none;
+    outline: none;
+    background: rgba(31, 31, 31, 0.8); /* Semi-transparent background */
+    box-sizing: border-box;
+    width: 300px; /* Adjust the width as needed */
+    aspect-ratio: 3 / 4;
+  }
+  
+  .note::placeholder {
+    color: gray;
+    opacity: 50%;
+  }
+  
+  .note:hover,
+  .note:focus {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+    transition: all 300ms ease;
+  }
+  
+  .btn {
+    height: 200px;
+    border-color: #bb86fc;
+    background: #3700b3;
+    border-radius: 15px;
+    font-size: 70px;
+    font-weight: 700;
+    color: #e0e0e0;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background: #6200ea;
+    color: #ffffff;
+    transition: all 300ms ease;
+  }
+  
