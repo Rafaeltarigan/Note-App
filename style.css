@@ -140,4 +140,58 @@ body {
     color: #ffffff;
     transition: all 300ms ease;
   }
+
+@media (max-width:428px) {
+  .logo {
+    width: 40px;
+ }
+
+ .info-text {
+  text-align: center;
+  color: #bb86fc;
+  font-size: 14px;
+ }
+}
+
+@media (max-width:414px) {
+  .logo {
+    width: 40px;
+ }
+
+ .info-text {
+  text-align: center;
+  color: #bb86fc;
+  font-size: 14px;
+ }
+}
+
+@media (max-width:412px) {
+  .logo {
+    width: 40px;
+ }
+
+ .info-text {
+  text-align: center;
+  color: #bb86fc;
+  font-size: 14px;
+ }
+}
+
+@media (max-width:360px) {
+  .logo {
+    width: 40px;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+  }
+
+  .info-text {
+    font-size: 14px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+}
   
